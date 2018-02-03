@@ -1,3 +1,4 @@
+
 1. jetson start Setting (need one more ubuntu pc)
 
 jetson id/pw : ubuntu/ubuntu
@@ -39,3 +40,10 @@ lausnch shell script : $ sudo ./installer.sh
 
 after reboot : sudo reboot
 
+optional(file send from jetson to hostPC) : $scp -r JetPack-${version}.run {hostpc}@ipAddress
+
+JetPackinstall :
+
+$ chmod +x JetPack-${version}.run
+
+$ ./JetPack-${version}.run
