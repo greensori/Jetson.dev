@@ -1,10 +1,10 @@
-* with TX1 board
+# with TX1 board
 
-1. jetson start Setting (need one more ubuntu pc)
+** jetson start Setting (need one more ubuntu pc)
 
 jetson id/pw : ubuntu/ubuntu
 
-**jetson board : 
+1. jetson board : 
 
 checking kernel version: $uname -r
 
@@ -27,7 +27,7 @@ $ sudo ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
 $ sudo ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key
 
 
-**hostPC:
+2. hostPC:
 
 connenting SSH : ssh ubuntu@ipAddress
 
