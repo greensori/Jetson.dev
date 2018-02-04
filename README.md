@@ -1,4 +1,4 @@
-# with TX1 board
+# installing JETPACK TX1
 
 ** jetson start Setting (need one more ubuntu pc)
 
@@ -48,3 +48,5 @@ JetPackinstall :
 $ chmod +x JetPack-${version}.run
 
 $ ./JetPack-${version}.run
+
+# installing JETPACK TX2
