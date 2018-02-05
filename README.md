@@ -1,3 +1,11 @@
+# RECENT JETPACK LINK
+
+https://developer.nvidia.com/embedded-computing
+
+# DEVELOPER SITE
+
+https://devtalk.nvidia.com/
+
 # installing JETPACK TX1
 
 ** jetson start Setting (need one more ubuntu pc)
