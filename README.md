@@ -14,7 +14,7 @@ https://devtalk.nvidia.com/
 
 jetson id/pw : ubuntu/ubuntu
 
-1. jetson board : 
+1. Jetson Board
 
 checking kernel version: $uname -r
 
@@ -37,7 +37,7 @@ $ sudo ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
 $ sudo ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key
 
 
-2. hostPC:
+2. hostPC
 
 connenting SSH : ssh ubuntu@ipAddress
 
