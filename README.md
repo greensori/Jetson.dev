@@ -1,8 +1,8 @@
-# RECENT JETPACK LINK
+* RECENT JETPACK LINK
 
 https://developer.nvidia.com/embedded-computing
 
-# DEVELOPER SITE
+* DEVELOPER SITE
 
 https://devtalk.nvidia.com/
 
