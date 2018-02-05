@@ -1,3 +1,5 @@
+# Reference
+
 * RECENT JETPACK LINK
 
 https://developer.nvidia.com/embedded-computing
@@ -8,7 +10,7 @@ https://devtalk.nvidia.com/
 
 # installing JETPACK TX1
 
-** jetson start Setting (need one more ubuntu pc)
+* jetson start Setting (need one more ubuntu pc)
 
 jetson id/pw : ubuntu/ubuntu
 
