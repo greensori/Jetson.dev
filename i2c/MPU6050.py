@@ -177,115 +177,52 @@ class MPU6050:
         If raw is False, it will return 250, 500, 1000, 2000 or -1. If the
         returned value is equal to -1 something went wrong.
         """
-
         # Get the raw value
-
         raw_data = self.bus.read_byte_data(self.address, self.GYRO_CONFIG)
-
-
-
         if raw is True:
-
             return raw_data
-
         elif raw is False:
-
             if raw_data == self.GYRO_RANGE_250DEG:
-
                 return 250
-
             elif raw_data == self.GYRO_RANGE_500DEG:
-
                 return 500
-
             elif raw_data == self.GYRO_RANGE_1000DEG:
-
                 return 1000
-
             elif raw_data == self.GYRO_RANGE_2000DEG:
-
                 return 2000
-
             else:
-
                 return -1
-
-
-
     def get_gyro_data(self):
-
         """Gets and returns the X, Y and Z values from the gyroscope.
-
-
-
         Returns the read values in a dictionary.
-
         """
-
         # Read the raw data from the MPU-6050
-
         x = self.read_i2c_word(self.GYRO_XOUT0)
-
         y = self.read_i2c_word(self.GYRO_YOUT0)
-
         z = self.read_i2c_word(self.GYRO_ZOUT0)
 
-
-
         gyro_scale_modifier = None
-
         gyro_range = self.read_gyro_range(True)
-
-
-
         if gyro_range == self.GYRO_RANGE_250DEG:
-
             gyro_scale_modifier = self.GYRO_SCALE_MODIFIER_250DEG
-
         elif gyro_range == self.GYRO_RANGE_500DEG:
-
             gyro_scale_modifier = self.GYRO_SCALE_MODIFIER_500DEG
-
         elif gyro_range == self.GYRO_RANGE_1000DEG:
-
             gyro_scale_modifier = self.GYRO_SCALE_MODIFIER_1000DEG
-
         elif gyro_range == self.GYRO_RANGE_2000DEG:
-
             gyro_scale_modifier = self.GYRO_SCALE_MODIFIER_2000DEG
-
         else:
-
             print("Unkown range - gyro_scale_modifier set to self.GYRO_SCALE_MODIFIER_250DEG")
-
             gyro_scale_modifier = self.GYRO_SCALE_MODIFIER_250DEG
-
-
-
         x = x / gyro_scale_modifier
-
         y = y / gyro_scale_modifier
-
         z = z / gyro_scale_modifier
-
-
-
         return {'x': x, 'y': y, 'z': z}
-
-
-
     def get_all_data(self):
-
         """Reads and returns all the available data."""
-
         temp = get_temp()
-
         accel = get_accel_data()
-
         gyro = get_gyro_data()
-
-
-
         return [accel, gyro, temp]
 
 
