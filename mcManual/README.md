@@ -21,9 +21,9 @@ pgup, pgDw: frontPage, backPage
 
 alt+s ; find file
 
-- ; deselect
+deselect ; -
 
-+ ; select all
+select all ; +
 
 shift + f6 ; change file name
 
